@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+header {
+    border-top: 4px solid #7F1700;
+    border-bottom: 4px solid #7F1700;
+    background-color: #E5DEDE;
+}
+
+body {
+    background-color: black;
+}
+
+.nav_bar {
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.img_logo1 {
+    position: static;
+    height: 7rem;
+    margin: 5px 1rem 3px 1rem;
+}
+
+.links {
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.abas > li > a {
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0.5rem 1rem 0.5rem 1rem;
+    padding: 1rem 0 1rem 0;
+    color: #7F1700;
+}
+
+.abas > li > a:hover {
+    color: #E82200;
+}
+
+.login-burguer {
+    display: flex;
+    align-items: center;
+}
+
+.login {
+    margin-right: 2rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color:blue;
+    padding: 8px;
+    outline: solid 2px blue;
+}
+
+#burguer {
+    margin-right: 2rem;
+    position: relative;
+    padding: 0.8rem;
+}
+
+#burguer:hover {
+    background-color: #AAA5A5;
+}
+
+
+main {
+    font-size: 100%;
+    
+}
+
+.introducao {
+    background: linear-gradient(68.15deg, #2D0600 16.62%, #0F0F0F 85.61%);
+    padding: 6rem 0 8rem 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: start;
+    gap: 1.5rem;
+}
+
+.forge_campanha {
+    width: fit-content;
+    font-family: "Noto Sans Display", sans-serif;
+    color: white;
+    margin: 2rem;
+    width: 45vw;
+}
+
+.forge_campanha > h1 {
+    font-size: 4rem;
+}
+
+.forge_campanha > p {
+    font-size: 1.3rem;
+}
+
+.gamemaster > img {
+    height: 22rem;
+}
+
+.comecar {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+
+.botao_comecar {
+    color: white;
+    font-weight: 400;
+    font-size: 1.7rem;
+    background-color: #7F1700;
+    padding: 1.5rem;
+    border-radius: 15px;
+    white-space: nowrap;
+}
+
+.martelo {
+    height: 7rem;
+}
+
+.descricao {
+    color: white;
+    line-height: 1.5rem;
+    padding: 6rem 0 10rem 0;
+    border-top: solid 2px black;
+    background-color: #0F0F0F;
+    display: flex;
+    align-items: top;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.descricao > div {
+    margin: 2rem 1rem 1rem 1rem;
+    width: 27rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.descricao > div > img {
+    margin-top: 2rem;
+    height: 12rem;
+}
+
+
+footer {
+    flex-wrap: wrap;
+    background-color: #383838;
+    border-top: solid 2px #7F1700;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+    padding: 1rem;
+}
+
+.logo_footer {
+    height: 5rem;
+}
+
+.listas_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: top;
+    gap: 5rem;
+    margin-right: 3rem;
+    flex-wrap: wrap;
+}
+
+.listas_footer > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font-size: 1.1rem;
+    border-right: solid 2px black;
+    padding-right: 10px;
+    line-height: 1.5rem;
+}
+
+.listas_footer > ul > li > p {
+    color: #C14D00;
+    margin-bottom: 10px;
+}
+
+.listas_footer > ul > li > a {
+    color: rgb(190, 181, 181);
+}
+
+.listas_footer > ul > li > a:hover {
+    color: #B20000;
+}
+
+@media screen and (min-width: 1325px) {
+    #burguer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1325px) {
+    .abas {
+        position: absolute;
+        text-align: right;
+        height: fit-content;
+        top: 7rem;
+        right: 0px;
+        background-color: #E5DEDE;
+        padding: 1rem;
+        line-height: 2.5rem;
+    }
+
+    .abas > li > a {
+        padding: 0;
+        border-bottom: solid 1px black;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .introducao {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .forge_campanha {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botao_comecar {
+        margin: auto;
+        padding: 0.3rem;
+    }
+
+    .martelo {
+        display: none;
+    }
+
+    .listas_footer > ul {
+        align-items: start;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .img_logo1 {
+        height: 2rem;
+    }
+
+    .abas {
+        top: 3rem;
+    }
+
+    .login {
+        font-size: 0.8rem;
+    }
+
+    .forge_campanha > h1 {
+        font-size: 2rem;
+    }
+
+    .forge_campanha > p {
+        font-size: 1rem;
+    }
+
+    .botao_comecar {
+        font-size: 1rem;
+    }
+
+    .gamemaster > img {
+        height: 15rem;
+    }
+
+    .descricao > div > h2 {
+        font-size: 1rem;
+    }
+
+    .descricao > div > p {
+        font-size: 0.8rem;
+    }
+
+    .descricao > div > img {
+        height: 8rem;
+    }
+}
